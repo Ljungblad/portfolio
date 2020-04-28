@@ -1,11 +1,12 @@
 import React from "react";
+import View from "../components/View";
 
 const Home = () => {
   return (
-    <div>
+    <View className="home-view">
       <h1>This is the home page</h1>
       <p>And here is the content</p>
-    </div>
+    </View>
   );
 };
 

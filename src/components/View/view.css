@@ -1,0 +1,9 @@
+.home-view,
+.projects-view,
+.contact-view,
+.about-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
