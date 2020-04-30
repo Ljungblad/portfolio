@@ -1,0 +1,16 @@
+.mid-section-wrapper {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 50px 0px 20px;
+}
+
+.mid-section-title {
+  text-align: center;
+}
+
+.mid-section-textbox p {
+  font-size: 1.4rem;
+  text-align: center;
+}

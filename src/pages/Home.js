@@ -3,6 +3,8 @@ import View from "../components/View";
 import client from "../contentful/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import TopSection from "../components/TopSection";
+import MidSection from "../components/MidSection";
+import Card from "../components/Card";
 
 const Home = () => {
   const [page, setPage] = React.useState(null);
@@ -34,25 +36,23 @@ const Home = () => {
         portraitImg={page.fields.portraitImage.fields.file.url}
         alt={page.fields.portraitImage.fields.file.alt}
       />
-      {projects &&
-        projects.map((project, i) => {
-          console.log(project);
-
-          return (
-            <div key={i}>
-              <img
-                className="project-img"
-                src={project.fields.image.fields.file.url}
-                alt="project"
-                loading="lazy"
+      <MidSection
+        midTitle={page.fields.middleTitle}
+        midBodyText={documentToReactComponents(page.fields.middleBodyText)}
+      />
+      <div>
+        {projects &&
+          projects.map((project, i) => {
+            return (
+              <Card
+                key={i}
+                imgURL={project.fields.image.fields.file.url}
+                cardTitle={project.fields.title}
+                projectURL={project.fields.link}
               />
-              <h4>{project.fields.title}</h4>
-              <a href={project.fields.link}>
-                <button>Visit Website ></button>
-              </a>
-            </div>
-          );
-        })}
+            );
+          })}
+      </div>
     </View>
   );
 };

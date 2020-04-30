@@ -1,6 +1,5 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap");
 
 * {
   margin: 0;
@@ -21,10 +20,31 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 p {
   font-family: "Roboto", sans-serif;
+  color: #ffffff;
+}
+
+h1 {
+  margin-top: 60px;
+  font-size: 6.2rem;
+  line-height: 0.9;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.3rem;
+}
+
+b {
+  font-weight: 550;
 }
