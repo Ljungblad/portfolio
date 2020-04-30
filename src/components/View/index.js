@@ -5,9 +5,9 @@ const View = (props) => (
   <div
     {...props}
     style={{
-      maxWidth: "600px",
       margin: "0 auto",
       width: "100vw",
+      height: "100vh",
     }}
   >
     {props.children}
