@@ -54,6 +54,10 @@
   transition: background-color 0.4s ease;
 }
 
+.card-btn:focus {
+  outline: none !important;
+}
+
 .card-btn:hover {
   background-color: #7510f7;
 }

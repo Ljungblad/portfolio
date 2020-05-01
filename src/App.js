@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router"; // Add Link here when using navlinks again
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="page-wrapper">
       <header>
-        <nav>
+        {/* <nav>
           <Link className="home" to="/">
             Home
           </Link>
@@ -23,14 +23,14 @@ function App() {
           <Link className="projects" to="projects">
             Projects
           </Link>
-        </nav>
-        <Router>
-          <Home path="/"></Home>
-          <About path="about"></About>
-          <Contact path="contact"></Contact>
-          <Projects path="projects"></Projects>
-        </Router>
+        </nav> */}
       </header>
+      <Router>
+        <Home path="/"></Home>
+        <About path="about"></About>
+        <Contact path="contact"></Contact>
+        <Projects path="projects"></Projects>
+      </Router>
     </div>
   );
 }

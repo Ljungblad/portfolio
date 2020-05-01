@@ -7,7 +7,6 @@ const Card = (props) => {
   const toggleHideImg = () => {
     const updatedImg = isHidden === "hidden" ? "" : "hidden";
     setIsHidden(updatedImg);
-    console.log("toggle!");
   };
 
   return (

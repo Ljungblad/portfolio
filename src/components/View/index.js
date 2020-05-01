@@ -11,6 +11,9 @@ const View = (props) => (
     }}
   >
     {props.children}
+    <div>
+      <h2>Footer</h2>
+    </div>
   </div>
 );
 
