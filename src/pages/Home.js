@@ -40,7 +40,7 @@ const Home = () => {
         midTitle={page.fields.middleTitle}
         midBodyText={documentToReactComponents(page.fields.middleBodyText)}
       />
-      <div>
+      <div className="cards-container">
         {projects &&
           projects.map((project, i) => {
             return (
