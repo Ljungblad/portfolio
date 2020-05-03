@@ -24,8 +24,6 @@
 }
 
 .top-section-profile-img {
-  width: 340px;
-  height: 340px;
+  width: 100vw;
   object-fit: cover;
-  border-radius: 50%;
 }
