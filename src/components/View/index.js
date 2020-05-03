@@ -1,5 +1,6 @@
 import React from "react";
 import "./view.css";
+import Footer from "../Footer";
 
 const View = (props) => (
   <div
@@ -11,9 +12,7 @@ const View = (props) => (
     }}
   >
     {props.children}
-    <div>
-      <h2>Footer</h2>
-    </div>
+    <Footer />
   </div>
 );
 
