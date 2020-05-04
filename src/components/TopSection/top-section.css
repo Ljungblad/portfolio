@@ -27,3 +27,38 @@
   width: 100vw;
   object-fit: cover;
 }
+
+/* DEKSTOP */
+@media (min-width: 992px) {
+  .top-section-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .top-section-title {
+    text-align: center;
+  }
+
+  .top-section-content {
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+  }
+
+  .top-section-textbox {
+    width: 60vw;
+    max-width: 465px;
+    margin: 0 20px 0;
+  }
+
+  .top-section-image-container {
+    display: block;
+  }
+
+  .top-section-profile-img {
+    width: 50vw;
+    max-width: 630px;
+    /* object-fit: cover; */
+    object-fit: contain;
+  }
+}

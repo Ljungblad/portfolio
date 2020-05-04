@@ -5,7 +5,7 @@ const TopSection = (props) => {
   return (
     <div className="top-section-wrapper">
       <h1 className="top-section-title">{props.title}</h1>
-      <div>
+      <div className="top-section-content">
         <div className="top-section-textbox">{props.bodyText}</div>
         <div className="top-section-image-container">
           <img

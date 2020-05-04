@@ -28,19 +28,31 @@ const Footer = () => {
       </div>
       <div className="link-container">
         <img src={GithubImg} alt="icon" loading="lazy" />
-        <a href={footer.fields.githubURL} target="_blank">
+        <a
+          href={footer.fields.githubURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {footer.fields.githubName}
         </a>
       </div>
       <div className="link-container">
         <img src={LinkedInImg} alt="icon" loading="lazy" />
-        <a href={footer.fields.linkedInURL} target="_blank">
+        <a
+          href={footer.fields.linkedInURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {footer.fields.linkedInName}
         </a>
       </div>
       <div className="link-container">
         <img src={LocationImg} alt="icon" loading="lazy" />
-        <a href={footer.fields.locationURL} target="_blank">
+        <a
+          href={footer.fields.locationURL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           {footer.fields.locationName}
         </a>
       </div>
