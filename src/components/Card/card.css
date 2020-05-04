@@ -60,3 +60,23 @@
 .card-btn:hover {
   background-color: #7510f7;
 }
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .card-wrapper {
+    width: 370px;
+    min-height: 250px;
+    margin: 20px 20px 20px;
+  }
+
+  .card-content-container {
+    width: 370px;
+    height: 250px;
+  }
+
+  .card-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+  }
+}

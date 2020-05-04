@@ -7,18 +7,33 @@
   font-size: 1.3em;
 }
 
-.footer-wrapper img {
-  width: 30px;
-}
-
 .link-container {
   display: flex;
   align-items: center;
   margin: 10px;
 }
 
+.link-container img {
+  width: 30px;
+}
+
 .link-container a {
   text-decoration: none;
   color: black;
   padding: 10px;
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .link-container {
+    margin-left: 60px;
+  }
+
+  .link-container img {
+    width: 35px;
+  }
+
+  .link-container a {
+    font-size: 1.5rem;
+  }
 }

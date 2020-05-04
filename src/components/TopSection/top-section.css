@@ -46,19 +46,23 @@
   }
 
   .top-section-textbox {
-    width: 60vw;
-    max-width: 465px;
+    width: 45vw;
+    max-width: 565px;
     margin: 0 20px 0;
   }
 
   .top-section-image-container {
+    max-width: 600px;
     display: block;
   }
 
   .top-section-profile-img {
     width: 50vw;
-    max-width: 630px;
-    /* object-fit: cover; */
+    max-width: 600px;
     object-fit: contain;
+  }
+
+  .top-section-textbox p {
+    font-size: 1.5rem;
   }
 }

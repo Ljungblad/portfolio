@@ -48,3 +48,24 @@ h5 {
 b {
   font-weight: 550;
 }
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+  }
+
+  h5 {
+    font-size: 1.4rem;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+}
