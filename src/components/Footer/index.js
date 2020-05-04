@@ -1,6 +1,11 @@
 import React from "react";
 import client from "../../contentful/contentful";
 import "./footer.css";
+
+// Components
+import Loader from "../Loader";
+
+// Icons
 import GithubImg from "../../assets/icons/github.svg";
 import EmailImg from "../../assets/icons/email.svg";
 import LinkedInImg from "../../assets/icons/linkedin.svg";
@@ -17,7 +22,7 @@ const Footer = () => {
   }, []);
 
   if (!footer) {
-    return <div>Loading...</div>;
+    return <Loader color="#000" />;
   }
 
   return (

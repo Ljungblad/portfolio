@@ -1,10 +1,13 @@
 import React from "react";
-import View from "../components/View";
 import client from "../contentful/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+
+// Components
+import View from "../components/View";
 import TopSection from "../components/TopSection";
 import MidSection from "../components/MidSection";
 import Card from "../components/Card";
+import Loader from "../components/Loader";
 
 const Home = () => {
   const [page, setPage] = React.useState(null);
@@ -25,7 +28,7 @@ const Home = () => {
   }, []);
 
   if (!page || !projects) {
-    return <div>Loading...</div>;
+    return <Loader color="#fff" />;
   }
 
   return (

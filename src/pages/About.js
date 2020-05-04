@@ -1,8 +1,11 @@
 import React from "react";
-import View from "../components/View";
 import client from "../contentful/contentful";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+
+// Components
+import View from "../components/View";
 import TopSection from "../components/TopSection";
+import Loader from "../components/Loader";
 
 const About = () => {
   const [page, setPage] = React.useState(null);
@@ -15,7 +18,7 @@ const About = () => {
   }, []);
 
   if (!page) {
-    return <div>Loading...</div>;
+    return <Loader color="#fff" />;
   }
 
   return (

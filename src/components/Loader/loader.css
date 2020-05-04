@@ -1,0 +1,21 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.loading-container svg {
+  width: 90px;
+}
+
+@media (min-width: 992px) {
+  .loading-container {
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+  }
+
+  .loading-container svg {
+    width: 100px;
+  }
+}
